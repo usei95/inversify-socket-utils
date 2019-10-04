@@ -1,5 +1,5 @@
 export const TYPE = {
-  Controller: Symbol.for("Controller")
+  Controller: Symbol.for("SocketController")
 };
 
 export const METADATA_KEY = {

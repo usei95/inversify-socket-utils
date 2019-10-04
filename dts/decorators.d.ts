@@ -1,0 +1,15 @@
+import "reflect-metadata";
+import { PARAMETER_TYPE } from "./constants";
+import { Interfaces } from "./interfaces";
+export declare function Controller(namespace: string): (target: any) => void;
+export declare function OnConnect(name: string): Interfaces.ActionDecorator;
+export declare function OnDisconnect(name: string): Interfaces.ActionDecorator;
+export declare function OnMessage(name: string): Interfaces.ActionDecorator;
+export declare const SocketIO: () => ParameterDecorator;
+export declare const SocketID: () => ParameterDecorator;
+export declare const ConnectedSocket: () => ParameterDecorator;
+export declare const Payload: () => ParameterDecorator;
+export declare const SocketQueryParam: (name: string) => ParameterDecorator;
+export declare const SocketRequest: () => ParameterDecorator;
+export declare const SocketRooms: () => ParameterDecorator;
+export declare function params(type: PARAMETER_TYPE, name: string): (target: Object, methodName: string, index: number) => void;
